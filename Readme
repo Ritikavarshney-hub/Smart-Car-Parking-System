@@ -1,1 +1,129 @@
-new file   
+##Smart Car Parking Lot System##
+
+This project is a simple implementation of a Smart Car Parking Lot System using Arrays and Linked Lists.
+It simulates how a real parking lot works by managing vehicle entry, exit, parking allocation, membership benefits, and billing.
+
+The main goal of this project is to understand how basic data structures can be used to solve real-life problems.
+
+About the Parking Lot
+
+Total parking spaces: 50
+
+Parking space IDs: 1 to 50
+
+Parking space status:
+
+0 → Free
+
+1 → Occupied
+
+Each parking space keeps track of how many times it was used and how much revenue it generated.
+
+Vehicle Details Stored
+
+For every vehicle, the system stores:
+
+Vehicle number (unique)
+
+Owner name
+
+Arrival time
+
+Departure time
+
+Membership type (None / Premium / Golden)
+
+Total parking hours
+
+Number of times parked
+
+Total amount paid
+
+Allocated parking space ID
+
+Entry Process
+
+When a car enters the parking lot:
+
+If the vehicle is entering for the first time, it is registered in the system and a parking space is allocated.
+
+If the vehicle is already registered, the system searches using the vehicle number and updates the arrival time.
+
+Parking space status is changed from free to occupied.
+
+Entry is allowed only if a free parking space is available.
+
+Exit Process
+
+When a car exits:
+
+Parking duration is calculated
+
+Total parking hours are updated
+
+Membership is upgraded if required
+
+Parking fee is calculated
+
+Membership discount is applied (if any)
+
+Parking space is marked as free again
+
+Parking Space Allocation
+
+Golden members → Parking spaces 1 to 10
+
+Premium members → Parking spaces 11 to 20
+
+No membership → Parking spaces 21 to 50
+
+The nearest available parking space is always allotted first.
+
+Membership Rules
+
+Less than 100 total hours → No membership
+
+100 hours or more → Premium membership
+
+200 hours or more → Golden membership
+
+Payment Rules
+
+₹100 for the first 3 hours
+
+₹50 for every extra hour
+
+10% discount for Premium and Golden members
+
+Sorting Features
+
+The system can:
+
+Sort vehicles based on number of times parked
+
+Sort vehicles based on total amount paid
+
+Sort parking spaces based on how often they are occupied
+
+Sort parking spaces based on revenue generated
+
+Data Structures Used
+
+Array → To manage parking spaces
+
+Linked List → To store and manage vehicle records
+
+Note:
+This project is implemented only using Arrays and Linked Lists.
+
+Purpose of the Project
+
+To understand practical use of arrays and linked lists
+
+To practice searching, updating, and sorting data
+
+To simulate a real-world parking system using basic DSA concepts
+
+Conclusion
+
+This project shows how even simple data structures can be used to build a complete and functional system. It helped in understanding logic building, data handling, and system flow in a practical way.
